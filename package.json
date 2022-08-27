@@ -1,0 +1,23 @@
+{
+  "name": "nodeneuralnetwork",
+  "version": "1.0.0",
+  "description": "A neural network in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aatully/NodeNeuralNetwork.git"
+  },
+  "keywords": [
+    "Node",
+    "neuralnetwork"
+  ],
+  "author": "tully",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aatully/NodeNeuralNetwork/issues"
+  },
+  "homepage": "https://github.com/aatully/NodeNeuralNetwork#readme"
+}
