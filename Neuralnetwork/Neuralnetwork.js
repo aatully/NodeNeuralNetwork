@@ -1,4 +1,5 @@
 const CreateWeigthAndBias = require('./functions/CreateWeigths');
+const SaveModel = require('./functions/SaveModel');
 const fs = require('fs');
 
 const DefaultConfig = {
@@ -31,10 +32,12 @@ class Neuralnetwork {
         // Otherwise this function creates a new configuration for the neural network
         newConfig = this.CreateConfig(DefaultConfig);
         this.config = newConfig;
+
+        SaveModel(this.config);
     }
 
     getConfig(config) {
-
+        
     }
 
     CreateConfig(config) {
