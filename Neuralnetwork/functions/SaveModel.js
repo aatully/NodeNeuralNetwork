@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const DefaultPath = path.join(__dirname, '../ModelsCheckpoint/');
+const DefaultPath = path.join(__dirname, '../../Checkpoints/');
 const DefaultPathName = 'Model';
 
 function SaveModel(config) {
@@ -17,7 +17,7 @@ function SaveModel(config) {
     fs.mkdirSync(ActualPath, {recursive: true});
 
     let File = JSON.stringify(config);
-    let FileName = '/Model' + '_' + Number;
+    let FileName = '/Model' + '_' + Number + '.json';
 
     fs.writeFileSync(ActualPath + FileName, File);
 }

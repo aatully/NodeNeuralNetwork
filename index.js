@@ -1,6 +1,5 @@
 const Neuralnetwork = require('./Neuralnetwork/Neuralnetwork');
 
-let net = new Neuralnetwork('./Neuralnetwork/ModelsCheckpoint/Model_4');
+let net = new Neuralnetwork('./Checkpoints/Model_0');
 
-// console.log(net.config.weights);
-// console.log(net.config.bias);
+console.log(net.config.weights);

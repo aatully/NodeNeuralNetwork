@@ -38,6 +38,13 @@ class Neuralnetwork {
 
     getConfig(config) {
         
+        let filename = config.split('/').pop();
+        let file = config + '/' + filename + '.json';
+
+        if (!fs.existsSync(file)) { return; }
+
+        let newConfig = JSON.parse(fs.readFileSync(file));
+        return newConfig;
     }
 
     CreateConfig(config) {
