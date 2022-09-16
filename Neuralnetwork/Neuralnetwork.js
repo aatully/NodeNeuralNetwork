@@ -11,7 +11,7 @@ const DefaultConfig = {
 
 class Neuralnetwork {
 
-    constructor(path = DefaultConfig) {
+    constructor(path = DefaultConfig, config) {
         this.learningRate = 0.01;
         this.momentum = 0.01;
         this.batchSize=  1;
@@ -33,7 +33,7 @@ class Neuralnetwork {
         newConfig = this.CreateConfig(DefaultConfig);
         this.config = newConfig;
 
-        SaveModel(this.config);
+        SaveModel(path, this.config);
     }
 
     getConfig(config) {
