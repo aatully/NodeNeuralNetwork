@@ -1,10 +1,9 @@
 const Neuralnetwork = require('./Neuralnetwork/Neuralnetwork');
 
 let config = {
-    layers: [2,3,2],
-    activation: "ReLU",
+    layers: [5,2,2,5],
 }
 
 let net = new Neuralnetwork('./Checkpoint/Modelo_1', config);
 
-// console.log(net.config.weights);
+net.learn([1,2,3]);

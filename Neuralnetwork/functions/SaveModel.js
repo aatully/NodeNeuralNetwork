@@ -1,8 +1,6 @@
 const path = require('path');
 const fs = require('fs');
 
-const DefaultPathName = 'Model';
-
 function SaveModel(config, info) {
 
     let dir = config.split('/');
