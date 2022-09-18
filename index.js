@@ -6,4 +6,4 @@ let config = {
 
 let net = new Neuralnetwork('./Checkpoint/Modelo_1', config);
 
-net.learn([1,2,3]);
+net.learn([1,2,3,4,5]);
